@@ -17,7 +17,7 @@ const bcrypt = require('bcryptjs')
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://localhost:27017/full-mern-stack-video')
+mongoose.connect('mongodb+srv://adilsoukaini:0667189814@cluster0.ys21jqa.mongodb.net/?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true })
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
